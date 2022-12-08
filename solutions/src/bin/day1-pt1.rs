@@ -5,7 +5,7 @@ use std::path::Path;
 fn main() {
     let mut cals = Vec::new();
 
-    if let Ok(lines) = read_lines("../input") {
+    if let Ok(lines) = read_lines("./inputs/1") {
         let mut total: i32 = 0;
         for line in lines {
             
@@ -20,6 +20,7 @@ fn main() {
             }
         }
     }
+    // SOLUTION PT 1
     let mut max: i32 = 0;
     for cal in cals {
         if cal > max {
